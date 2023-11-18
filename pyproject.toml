@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "imgmatch"
+version = "0.1.0"
+description = "imgmatch: Image Template Matching Tool"
+authors = ["Zeeshan Khan <zkhan1093@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/zkhan93/imgmatch"
+keywords = ["opencv", "image", "template", "matching", "cli"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.8.1.78"
+numpy = "^1.26.2"
+click = "^8.1.7"
+rich = "^13.7.0"
+update = "^0.0.1"
+
+[tool.poetry.scripts]
+imgmatch = "imgmatch.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

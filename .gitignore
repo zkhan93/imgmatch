@@ -1,0 +1,5 @@
+*.py[co]
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+dist/
+.venv/
